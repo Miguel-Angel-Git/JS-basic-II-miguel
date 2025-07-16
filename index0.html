@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+</head>
+
+<body>
+  <script>
+    let Nejercicio = 1;
+    console.log("           Ejercicio:", Nejercicio++);
+
+    const postres = ["helado", "tarta", "pastel"];
+    console.log("Postres:", postres);
+
+
+    // 2 objeto coder
+    console.log("           Ejercicio:", Nejercicio++);
+
+    const coder = {
+      nombre: "Ana",
+      edad: 25
+    };
+    console.log("Coder:", coder);
+
+    // 3 Imprimir tipos
+    console.log("           Ejercicio:", Nejercicio++);
+
+    console.log("Tipo de postres:", typeof postres);
+    console.log("Tipo de coder:", typeof coder);
+    console.log("Tipo de coder.nombre:", typeof coder.nombre);
+    console.log("Tipo de coder.edad:", typeof coder.edad);
+
+
+
+    // 4 Verificar +18
+    console.log("           Ejercicio:", Nejercicio++);
+    const age = 18;
+
+    if (age >= 18) {
+      console.log("Eres mayor de edad");
+    } else {
+      console.log("Eres menor de edad");
+    }
+
+    // 5 verificar +18 v2.0
+    console.log("           Ejercicio:", Nejercicio++);
+    const age2 = 12;
+    if (age2 >= 18) {
+      console.log("Eres mayor de edad");
+    } else {
+      console.log("Eres menor de edad");
+    }
+
+    // 6 mascota
+    console.log("           Ejercicio:", Nejercicio++);
+
+    let pet = "Perro";
+    if (pet === "Perro") {
+      console.log("Tienes un perro.");
+    } else if (pet === "Gato") {
+      console.log("Tienes un gato");
+    } else {
+      console.log("Ni gato ni perro");
+    }
+
+    // 7 Serpiente
+    console.log("           Ejercicio:", Nejercicio++);
+
+    pet = "Serpiente";
+    if (pet === "Perro") {
+      console.log("Tienes un perro.");
+    } else if (pet === "Gato") {
+      console.log("Tienes un gato");
+    } else {
+      console.log("Ni gato ni perro");
+    }
+
+    // 8 switch 
+    console.log("           Ejercicio:", Nejercicio++);
+
+    pet = "serpiente";
+    switch (pet) {
+      case "perro":
+        console.log("Tienes un perro");
+        break;
+      case "gato":
+        console.log("Tienes un gato");
+        break;
+      default:
+        console.log("otro animal");
+    }
+
+    // 9 ternario frio
+    console.log("           Ejercicio:", Nejercicio++);
+
+
+    let weather = "frío";
+    let ropa = weather === "calor" ? "ponerse el Bikini" : "ponerse el Abrigo ";
+    console.log("Clima:", weather, "hay que ", ropa);
+
+    // 10 ternario Calor
+    console.log("           Ejercicio:", Nejercicio++);
+
+
+    weather = "calor";
+    ropa = weather === "calor" ? "ponerse el Bikini" : "ponerse el Abrigo ";
+    console.log("Clima:", weather, "hay que ", ropa);
+
+    // Ejercicio 11: Evaluar tipo de una constante
+    console.log("           Ejercicio:", Nejercicio++);
+
+
+    const value = true; 
+    switch (typeof value) {
+      case "string":
+        console.log("es string");
+        break;
+      case "number":
+        console.log("es un número");
+        break;
+      case "boolean":
+        console.log("es booleano");
+        break;
+      case "object":
+        console.log("es un objeto");
+        break;
+      default:
+        console.log("desconocido");
+    }
+
+    //Bucles
+
+    // 12 Bucle for del 0 al 10
+    console.log("           Ejercicio:", Nejercicio++);
+    console.log("12 Lista del 0 al 10");
+    for (let i = 0; i <= 10; i++) {
+      console.log(i);
+    }
+
+    // 13 Bucle for...in 
+    console.log("           Ejercicio:", Nejercicio++);
+    console.log("For...in nombres");
+    const programadoras = ["Lucía", "María", "Ana"];
+    for (let index in programadoras) {
+      console.log(`Índice ${index}: ${programadoras[index]}`);
+    }
+
+    // 14 saludar
+    console.log("           Ejercicio:", Nejercicio++);
+    console.log("14 saludando");
+    const nombres = ["Carlos", "Sofía", "Elena"];
+    for (let nombre of nombres) {
+      console.log(`¡Hola, ${nombre}!`);
+    }
+
+    // 15 1 al 5
+    console.log("           Ejercicio:", Nejercicio++);
+    console.log("While del 1 al 5");
+    let contador = 1;
+    while (contador <= 5) {
+      console.log(contador);
+      contador++;
+    }
+
+    // 16 Bucle do...while del 1 al 5
+    console.log("           Ejercicio:", Nejercicio++);
+    console.log("\Do...while del 1 al 5");
+    let contador2 = 1;
+    do {
+      console.log(contador2);
+      contador2++;
+    } while (contador2 <= 5);
+
+    // 17 Función saludar
+    console.log("           Ejercicio:", Nejercicio++);
+    console.log("saludar");
+    function saludar(nombre) {
+      return `¡Hola, ${nombre}! Bienvenido.`;
+    }
+    console.log(saludar("Lucia"));
+
+    // 18 calcular area de rectángulo
+    console.log("           Ejercicio:", Nejercicio++);
+
+    console.log("area de un rectángulo");
+    function calcularAreaRectangulo(base, altura) {
+      const area = base * altura;
+      console.log(`El área del rectángulo es: ${area}`);
+    }
+    calcularAreaRectangulo(5, 3);
+
+
+  </script>
+</body>
+
+</html>
